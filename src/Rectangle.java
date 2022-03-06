@@ -22,7 +22,7 @@ public class Rectangle extends Figure{
         //El propio programa se da cuenta de que esta operación esta definida en la clase abstracta FIGURA
         return this.l1 * this.l2;
     }
-    
+
     @Override
     public String toString(){
         return "||Rectangle [l1: " +this.l1+ " l2: " +this.l2 + "] area: "+this.area()+"||";
