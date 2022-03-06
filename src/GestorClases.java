@@ -1,4 +1,4 @@
-package u;
+package edu.upc.eetac.dsa ;
 
 import java.util.Arrays;
 
@@ -10,7 +10,7 @@ public class GestorClases {
      * Metodo void que automaticamente usando --comparableTo-- ordena las areas de kas figuras de v
      * @param v
      */
-    public static void sort (Figura[] v){
+    public static void sort (Figure[] v){
         Arrays.sort(v);
     }
 
@@ -19,9 +19,9 @@ public class GestorClases {
      * @param v vector que se rellena de objetos Figura
      * @return devuelve el valor numerico de la suma de estas
      */
-    public static double suma (Figura[] v) {
+    public static double suma (Figure[] v) {
         double ret=0;
-        for (Figura f:v){
+        for (Figure f:v){
             ret+=f.area();
             //Area es un metodo POLIMORFICO
         }
@@ -33,12 +33,11 @@ public class GestorClases {
          */
 
         Figura[] v= new Figura[5];
-        v[0]= new Cercle (5);
-        v[1]= new Hexagono(2);
-        v[2]= new Quadrat(2);
-        v[3]= new Rombe(3,8);
-        v[4]= new Rectangle(2,1);
-
+        v[0]= new Circle (5);
+        v[1]= new Rectangle(4,5);
+        v[2]= new Square(2);
+        v[3]= new Rombo(3,8);
+        v[4] = new TriangleRectangle(1,2);
 
         double r= GestorClases.suma(v);
 
