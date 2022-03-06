@@ -32,7 +32,7 @@ public class GestorClases {
          * Creamos el vector de tres posiciones de clase FIGURA
          */
 
-        Figura[] v= new Figura[5];
+        Figure[] v= new Figure[5];
         v[0]= new Circle (5);
         v[1]= new Rectangle(4,5);
         v[2]= new Square(2);
